@@ -10,6 +10,7 @@
 //     Action action;
 //     // ------- STEP 2.1 -----------------
 //     // Minimal code to pass STEP 2 in test_cooling_alert.cpp
+
 //     // if (cooling_type == PASSIVE_COOLING && temperature > PASSIVE_COOLING_LIMIT) {
 //     //     action.actionType = ALERT_EMAIL;
 //     //     snprintf(action.actionBody, sizeof(action.actionBody),
@@ -18,7 +19,9 @@
 //     //     action.actionType = NO_ALERT;
 //     //     action.actionBody[0] = '\0';
 //     // }
+
 //     //------- STEP 2.1 code ends -------
 //     return action;
 // }
+
 // ----------- STEP 2 code ends -------

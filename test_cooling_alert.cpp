@@ -19,4 +19,5 @@ extern "C" {
 //     Action action = battery_data_to_action(PASSIVE_COOLING, 32.0f);
 //     ASSERT_EQ(action.actionType, NO_ALERT);
 // }
+
 // ----------- STEP 2 code ends -------
