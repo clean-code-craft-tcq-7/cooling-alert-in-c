@@ -20,7 +20,8 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 enable_testing()
 
-add_executable(test-monitor cooling_alert.c test_cooling_alert.cpp)
+file(GLOB SOURCES *.c *.cpp)
+add_executable(test-monitor ${SOURCES})
 
 target_link_libraries(
   test-monitor
