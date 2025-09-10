@@ -4,16 +4,16 @@ extern "C" {
 #include "./thresholds.h"
 }
 
-// ----------- STEP 3 -----------------
+// ----------- STEP 4 -----------------
 // Distinguish thresholds per cooling type
 
 TEST(ThresholdTest, CoolingDependentThresholds) {
-    float passiveLimit = maxTemperatureForCoolingType(PASSIVE);
-    float hiActiveLimit = maxTemperatureForCoolingType(ACTIVE);
-    float medActiveLimit = maxTemperatureForCoolingType(HYBRID);
+    float passiveLimit = alertTemperatureForCoolingType(PASSIVE);
+    float hiActiveLimit = alertTemperatureForCoolingType(ACTIVE);
+    float medActiveLimit = alertTemperatureForCoolingType(HYBRID);
 
     ASSERT_TRUE(passiveLimit < medActiveLimit);
     ASSERT_TRUE(medActiveLimit < hiActiveLimit);
 }
 
-// ----------- STEP 3 code ends -------
+// ----------- STEP 4 code ends -------
