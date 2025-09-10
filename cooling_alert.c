@@ -8,7 +8,7 @@
 
 // Action battery_temperature_to_action(CoolingType cooling_type, float temperature) {
 //     Action action;
-//     // ------- STEP 2.1 -----------------
+//     // ------- STEP 3 -----------------
 //     // Minimal code to pass STEP 2 in test_cooling_alert.cpp
 
 //     // if (cooling_type == PASSIVE_COOLING && temperature > PASSIVE_COOLING_LIMIT) {
@@ -20,7 +20,7 @@
 //     //     action.actionBody[0] = '\0';
 //     // }
 
-//     //------- STEP 2.1 code ends -------
+//     //------- STEP 3 code ends -------
 //     return action;
 // }
 
