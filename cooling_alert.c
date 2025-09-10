@@ -6,7 +6,7 @@
 
 // const float PASSIVE_COOLING_LIMIT = 40.0;
 
-// Action battery_data_to_action(CoolingType cooling_type, float temperature) {
+// Action battery_temperature_to_action(CoolingType cooling_type, float temperature) {
 //     Action action;
 //     // ------- STEP 2.1 -----------------
 //     // Minimal code to pass STEP 2 in test_cooling_alert.cpp
