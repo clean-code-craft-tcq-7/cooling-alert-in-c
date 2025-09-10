@@ -43,3 +43,13 @@ Work towards the deliverables in short steps. Ensure quality gates pass at each 
 | 4 | Add active-cooling type | Test and implement new thresholds |
 | 5 | Refactor: Reduce duplication | Separation of classification from emailing |
 | 6 | Add actuator | Test and implement new action |
+
+## Workflow
+
+```mermaid
+flowchart LR
+    A["Assert for small increment"] --> B["Failing test"]
+    B --> C["Minimum passing code"]
+    C --> D["External learning"]
+    D --> E["Refactor"]
+```
