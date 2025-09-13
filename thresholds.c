@@ -5,11 +5,11 @@
 
 // float alertTemperatureForCoolingType(ThermalManagementType type) {
 //     static const float thresholds[] = {
-//         [PASSIVE] = 40.0,
-//         [ACTIVE] = 55.0,
-//         [HYBRID] = 50.0
+//         [THERMAL_PASSIVE] = 40.0,
+//         [THERMAL_ACTIVE] = 55.0,
+//         [THERMAL_HYBRID] = 50.0
 //     };
-//     if (type >= PASSIVE && type <= HYBRID) {
+//     if (type >= THERMAL_PASSIVE && type <= THERMAL_HYBRID) {
 //         return thresholds[type];
 //     }
 //     return 0.0;

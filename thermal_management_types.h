@@ -1,7 +1,7 @@
 #pragma once
 
 typedef enum {
-    PASSIVE,
-    ACTIVE,
-    HYBRID
+    THERMAL_PASSIVE,
+    THERMAL_ACTIVE,
+    THERMAL_HYBRID
 } ThermalManagementType;
