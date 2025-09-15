@@ -4,7 +4,7 @@ extern "C" {
 }
 
 // ----------- STEP 5 -----------------
-// Separation of classification from the email/controller action.
+// Separation of classification from the email action.
 
 // TEST(ClassifyTest, BatteryOk) {
 //     BatteryDataModel batteryData = {THERMAL_PASSIVE, 25};

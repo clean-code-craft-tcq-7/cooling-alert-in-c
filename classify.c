@@ -2,7 +2,7 @@
 #include "./thresholds.h"
 
 // ----------- STEP 5 -----------------
-// Separation of classification from the email/controller action.
+// Separation of classification from the email action.
 
 // BatteryState classify_battery_state(BatteryDataModel batteryData) {
 //     BatteryState state = BATTERY_OK;
