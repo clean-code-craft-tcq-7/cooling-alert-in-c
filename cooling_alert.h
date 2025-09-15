@@ -12,7 +12,6 @@
 // typedef enum {
 //     NO_ALERT,
 //     ALERT_EMAIL,
-//     ALERT_SMS
 // } ActionType;
 
 // typedef struct {

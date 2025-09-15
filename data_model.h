@@ -9,6 +9,7 @@ typedef enum {
 } BatteryState;
 
 typedef struct {
+    int batteryId;
     ThermalManagementType thermalManagementType;
     int temperature;
 } BatteryDataModel;

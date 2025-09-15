@@ -1,5 +1,11 @@
 # Monitoring against overheating
 
+Rechargeable batteries can heat during charging and discharging. Different thermal management techniques are used based on their capacity and performance.
+
+This project aims to implement automated monitoring and alerting when the thermal management fails.
+
+## Technical domain
+
 There are [three types](https://www.batterydesign.net/battery-thermal-management/) of battery-cooling systems with examples:
 
 - Active: Using air or liquid
@@ -22,14 +28,22 @@ Here is a table of thresholds
 
 ## Actions
 
-Actions are of different types, based on customer preference:
+Actions are of different types, based on customer capability:
 
 - Trigger an actuator (e.g., to restrict the charging rate)
-- Alert a human via SMS or email
+- Alert a human via email
 
 ## The task
 
-Though the effectiveness of the system depends on many factors (sensors, SMS-providers), focus the delivery on the above requirements. Define interfaces to talk to external systems.
+Though the effectiveness of the system depends on many factors (sensors, email-providers), focus the delivery on the above requirements. Define interfaces to talk to external systems.
+
+However, like in any project, there are dependencies and everything isn't known upfront. So define the interfaces in stages.
+
+- Initially, we have one type to work with - batteries with passive cooling.
+- During the project, we get other types (active and hybrid), but the action to take at "warning" level is unclear.
+- Next we have the email alert, but the controller interface is unclear.
+
+There are different ways to handle incremental interface specifications. One way is to define a very generic interface to start, with pluggable behavior. However, this requires many assumptions to be made, especially about non-happy flows. Instead, we will follow the Test-driven method in this project.
 
 ## Deliverables
 
