@@ -9,9 +9,9 @@ extern "C" {
 // Distinguish thresholds per cooling type
 
 // TEST(ThresholdTest, CoolingDependentThresholds) {
-//     float passiveLimit = alertTemperatureForCoolingType(PASSIVE);
-//     float hiActiveLimit = alertTemperatureForCoolingType(ACTIVE);
-//     float medActiveLimit = alertTemperatureForCoolingType(HYBRID);
+//     float passiveLimit = alertTemperatureForCoolingType(THERMAL_PASSIVE);
+//     float hiActiveLimit = alertTemperatureForCoolingType(THERMAL_ACTIVE);
+//     float medActiveLimit = alertTemperatureForCoolingType(THERMAL_HYBRID);
 
 //     ASSERT_TRUE(passiveLimit < medActiveLimit);
 //     ASSERT_TRUE(medActiveLimit < hiActiveLimit);
